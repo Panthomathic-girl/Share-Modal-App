@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal App | student </title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- wrapper -->
+    <div>
+
+
+
+        <!-- circles -->
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+
+
+
+        <!-- card-wrapper -->
+        <div class = wrapperOfCard>
+            <div class="card-wrapper">
+                <!-- image -->
+                <div>
+                    <img src="./assets/shaliniPhoto.jpg" alt="user"/>
+                </div>
+                <!-- name-text -->
+                <div class="user-name">
+                    <h1>Shalini Verma</h1>
+                </div>
+                <!-- intro -->
+                <div class="designation">
+                    <h2>Student, Amty University Patna</h2>
+                </div>
+                <!-- Buttons -->
+                <div class="bottom-group">
+                    <button onclick="openModal()" class="btn-share btn-card">
+                        <i class="fa-solid fa-share">↪️</i>
+                        <div>Share My Profile</div>
+                    </button>
+    
+                    <button class="btn-follow btn-card">Follow Me</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal wrapper -->
+
+        <div class="modal">
+             <!-- modal header -->
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <i onclick="closeModal()" class="fa-solid fa-xmark close">❌</i>
+        </div>
+        
+
+
+
+        <div>
+            <h3>Share this via</h3>
+
+            <div class="icon-container">
+                <a href="#" class="icon" id="github">
+                    <!-- <i class="fa-brands fa-github-f"></i> -->
+                    <img src="./assets/logo (1).png" class="fa-brands fa-github-f" alt="Github">
+                </a>
+
+                <a href="#" class="icon" id="linkedin">
+                    <!-- <i class="fa-brands fa-linkedin"></i> -->
+                    <img src="./assets/linkedin (1).png" class="fa-brands fa-linkedin" alt="Linkedin">
+                </a>
+
+                <a href="#" class="icon" id="instagram">
+                    <!-- <i class="fa-brands fa-instagram"></i> -->
+                    <img src="./assets/instagram (1).png" class="fa-brands fa-instagram" alt="Instagram">
+                </a>
+
+                <a href="#" class="icon" id="telegram">
+                    <!-- <i class="fa-brands fa-telegram"></i> -->
+                    <img src="./assets/telegram (1).png" class="fa-brands fa-telegram" alt="Telegram">
+                </a>
+
+                <a href="#" class="icon" id="whatsapp">
+                    <!-- <i class="fa-brands fa-whatsapp"></i> -->
+                    <img src="./assets/whatsapp (1).png" class="fa-brands fa-whatsapp" alt="Whatsapp">
+                </a>
+            </div>
+        </div>
+
+
+
+        <!-- Overlay -->
+        <div class="overlay" onclick="closeModal()"></div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
